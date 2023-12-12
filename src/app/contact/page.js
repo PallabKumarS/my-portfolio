@@ -1,5 +1,6 @@
 "use client";
 
+import Profile from "@/components/Profile";
 import { Button } from "@nextui-org/react";
 import toast from "react-hot-toast";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa6";
@@ -34,14 +35,14 @@ const ContactPage = () => {
 
   return (
     <div className="container mx-auto pt-20">
-      <h1 className="text-center text-2xl text-gray-300 font-semibold my-5">
+      <h1 className="text-center text-2xl text-gray-300 font-semibold my-10">
         You Can Contact Me Here!
       </h1>
-      <div className="flex flex-col md:flex-row justify-center sm:items-center md:items-start">
+      <div className="flex flex-col-reverse md:flex-row justify-center sm:items-center md:items-start gap-10">
         <div className="w-full flex-1">
           <form
             action="/submit-form"
-            className="text-center"
+            className="text-center bg-slate-800 py-24 rounded-xl"
             onSubmit={handleSubmit}
           >
             <label for="name" className="text-lg text-gray-300">
@@ -54,7 +55,7 @@ const ContactPage = () => {
               name="name"
               required
               placeholder="Enter Your Name"
-              className="px-2 py-2 rounded-xl mb-3 w-3/4"
+              className="px-2 py-2 rounded-xl mb-5 w-3/4"
             />
             <br />
             <label for="email" className="text-lg text-gray-300">
@@ -67,7 +68,7 @@ const ContactPage = () => {
               name="email"
               required
               placeholder="Enter Your Email"
-              className="px-2 py-2 rounded-xl mb-3 w-3/4"
+              className="px-2 py-2 rounded-xl mb-5 w-3/4"
             />
             <br />
             <label for="message" className="text-lg text-gray-300">
@@ -79,8 +80,8 @@ const ContactPage = () => {
               name="message"
               rows="4"
               required
-              placeholder="enter message"
-              className="px-2 py-2 rounded-xl mb-3 w-3/4"
+              placeholder="Enter Message"
+              className="px-2 py-2 rounded-xl mb-5 w-3/4"
             ></textarea>
             <br />
             <Button
@@ -93,22 +94,8 @@ const ContactPage = () => {
             </Button>
           </form>
         </div>
-        <div className="flex-1 justify-center">
-          <h2 className="text-center text-xl font-semibold text-gray-300 mt-10 mb-5">
-            You can also get to me through
-          </h2>
-          <div className="flex flex-wrap justify-center gap-5">
-            <a href="https://www.instagram.com/pallabkumars/">
-              <FaInstagram className="text-5xl text-rose-500" />
-            </a>
-            <a href="https://www.linkedin.com/in/pallab-kumar-sarker-7a6362251/">
-              <FaLinkedin className="text-5xl text-sky-500" />
-            </a>
-            <a href="https://www.facebook.com/PallabKumars/">
-              <FaFacebook className="text-5xl text-blue-500" />
-            </a>
-          </div>
-        </div>
+
+        <Profile></Profile>
       </div>
     </div>
   );
