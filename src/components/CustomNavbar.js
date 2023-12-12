@@ -26,7 +26,7 @@ const CustomNavbar = () => {
           About Me
         </Link>
       </NavbarItem>
-      <NavbarItem>
+      {/* <NavbarItem>
         <Link
           color="foreground"
           href="/projects"
@@ -34,7 +34,7 @@ const CustomNavbar = () => {
         >
           Projects
         </Link>
-      </NavbarItem>
+      </NavbarItem> */}
       <NavbarItem>
         <Link
           color="foreground"

@@ -92,7 +92,7 @@ const Projects = () => {
                   </h4>
                 </CardHeader>
                 <CardBody className="overflow-visible py-2">
-                  <div>
+                  <div className="my-3">
                     <CustomSlider images={project.images}></CustomSlider>
                   </div>
                   <p className="text-md font-medium text-gray-300">

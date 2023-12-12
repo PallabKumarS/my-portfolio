@@ -8,7 +8,7 @@ import React from "react";
 const CustomSlider = ({ images }) => {
   const [sliderRef] = useKeenSlider(
     {
-      loop: true,
+      loop: false,
     },
     [
       (slider) => {
