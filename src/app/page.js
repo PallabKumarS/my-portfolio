@@ -1,13 +1,18 @@
-import { Button } from "@nextui-org/react";
-import RootLayout from "./layout";
+"use client";
+
+import AboutMe from "./AboutMe";
+import Services from "./Services";
 
 const HomePage = () => {
   return (
-    <RootLayout>
-      {/* Your page content goes here */}
-      <h1>Welcome to My Next.js App</h1>
-      <Button>JJjjj</Button>
-    </RootLayout>
+    <div className="container mx-auto">
+      <div className="mt-20">
+        <AboutMe></AboutMe>
+      </div>
+      <div className="mt-20">
+        <Services></Services>
+      </div>
+    </div>
   );
 };
 
