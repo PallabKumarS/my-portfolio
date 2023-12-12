@@ -20,7 +20,7 @@ const CustomNavbar = () => {
       <NavbarItem>
         <Link
           color="foreground"
-          href="/contact"
+          href="/"
           className="text-gray-500 hover:text-blue-600 text-lg font-semibold"
         >
           About Me
@@ -50,7 +50,8 @@ const CustomNavbar = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="bg-gradient-to-bl from-gray-900 to-gray-600 h-20 "
+      className="bg-gradient-to-bl from-gray-900 to-gray-600 h-20"
+      shouldHideOnScroll
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -68,7 +69,7 @@ const CustomNavbar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {links}
       </NavbarContent>
-      <NavbarMenu>{links}</NavbarMenu>
+      <NavbarMenu className="pt-5">{links}</NavbarMenu>
     </Navbar>
   );
 };

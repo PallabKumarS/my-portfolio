@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import picture from "../../public/My Picture.jpg";
+import picture from "../../../public/My Picture.jpg";
 import { Button, Link } from "@nextui-org/react";
 import { FaDownload } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
@@ -23,7 +23,7 @@ const AboutMe = () => {
 
   return (
     <div>
-      <div className="flex flex-col  md:flex-row-reverse items-center justify-around">
+      <div className="flex flex-col  md:flex-row-reverse items-center justify-around px-1">
         <div>
           <Image
             src={picture}

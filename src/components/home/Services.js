@@ -1,18 +1,17 @@
 "use client";
 
-import { IoLogoWebComponent } from "react-icons/io5";
 import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
 import Image from "next/image";
-import frontEnd from "../../public/front-end.png";
-import backEnd from "../../public/back-end.png";
-import fullStack from "../../public/full-stack.png";
+import frontEnd from "../../../public/front-end.png";
+import backEnd from "../../../public/back-end.png";
+import fullStack from "../../../public/full-stack.png";
 
 const Services = () => {
   return (
     <div className="flex flex-col gap-5 md:flex-row justify-center items-center pb-10">
       <Card className="max-w-[400px] bg-gray-800 h-80">
         <CardHeader className="flex gap-3 justify-center">
-          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <Image alt="logo fe" src={frontEnd} width={40}></Image>
           <p className="text-xl text-gray-300">Front End Development</p>
         </CardHeader>
         <Divider />
@@ -29,7 +28,7 @@ const Services = () => {
       </Card>
       <Card className="max-w-[400px] bg-gray-800 h-80">
         <CardHeader className="flex gap-3 justify-center">
-          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <Image alt="logo fe" src={backEnd} width={40}></Image>
           <p className="text-xl text-gray-300">Back End Development</p>
         </CardHeader>
         <Divider />
@@ -48,7 +47,7 @@ const Services = () => {
       </Card>
       <Card className="max-w-[400px] bg-gray-800 h-80">
         <CardHeader className="flex gap-3 justify-center">
-          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <Image alt="logo fe" src={fullStack} width={40}></Image>
           <p className="text-xl text-gray-300">Full Stack Development</p>
         </CardHeader>
         <Divider />
