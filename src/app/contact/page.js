@@ -37,7 +37,7 @@ const ContactPage = () => {
       <h1 className="text-center text-2xl text-gray-300 font-semibold my-5">
         You Can Contact Me Here!
       </h1>
-      <div className="flex flex-col md:flex-row justify-center items-start">
+      <div className="flex flex-col md:flex-row justify-center sm:items-center md:items-start">
         <div className="w-full flex-1">
           <form
             action="/submit-form"
@@ -93,7 +93,7 @@ const ContactPage = () => {
             </Button>
           </form>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 justify-center">
           <h2 className="text-center text-xl font-semibold text-gray-300 mt-10 mb-5">
             You can also get to me through
           </h2>
