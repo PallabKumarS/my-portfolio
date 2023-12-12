@@ -10,7 +10,7 @@ const AboutMe = () => {
     const link = document.createElement("a");
 
     link.href =
-      "https://drive.google.com/file/d/1hnE3GFeSiVtfh2n5R_KMj_--raSzQK1k/view?usp=drive_link";
+      "https://drive.usercontent.google.com/download?id=1hnE3GFeSiVtfh2n5R_KMj_--raSzQK1k&export=download&authuser=0&confirm=t&uuid=8f17ab0c-1f24-40b0-9f2c-1ba609dd1d42&at=APZUnTWrynxXKIR0lPQwR-8DI6Rr:1702369481015";
 
     link.download = "Pallab_Kumar_Sarker_Resume.pdf";
 

@@ -1,20 +1,64 @@
 "use client";
-import { IoLogoWebComponent } from "react-icons/io5";
 
+import { IoLogoWebComponent } from "react-icons/io5";
 import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
 import Image from "next/image";
+import frontEnd from "../../public/front-end.png";
+import backEnd from "../../public/back-end.png";
+import fullStack from "../../public/full-stack.png";
 
 const Services = () => {
   return (
-    <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
-      <Card className="max-w-[400px]">
+    <div className="flex flex-col gap-5 md:flex-row justify-center items-center pb-10">
+      <Card className="max-w-[400px] bg-gray-800 h-80">
         <CardHeader className="flex gap-3 justify-center">
-          <IoLogoWebComponent className="text-5xl" />
-          <p className="text-md">Front End</p>
+          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <p className="text-xl text-gray-300">Front End Development</p>
         </CardHeader>
         <Divider />
         <CardBody>
-          <p>Make beautiful websites regardless of your design experience.</p>
+          <p className="text-gray-300">
+            As a seasoned MERN stack developer, my front-end development
+            services are meticulously crafted to elevate web experiences. With
+            expertise in ReactJs,NextJs, I specialize in designing responsive
+            and intuitive user interfaces, ensuring a seamless journey for users
+            across various devices.
+          </p>
+        </CardBody>
+        <Divider />
+      </Card>
+      <Card className="max-w-[400px] bg-gray-800 h-80">
+        <CardHeader className="flex gap-3 justify-center">
+          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <p className="text-xl text-gray-300">Back End Development</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
+          <p className="text-gray-300">
+            As an adept MERN stack developer, my back-end development services
+            are tailored for robust and efficient web solutions. Proficient in
+            Node.js and Express.js, I specialize in architecturing scalable
+            server-side applications that seamlessly handle data flow and
+            enhance overall system performance. Leveraging MongoDB for database
+            design and management, I ensure optimal data integrity and
+            integration with the front-end.
+          </p>
+        </CardBody>
+        <Divider />
+      </Card>
+      <Card className="max-w-[400px] bg-gray-800 h-80">
+        <CardHeader className="flex gap-3 justify-center">
+          <IoLogoWebComponent className="text-5xl text-gray-500" />
+          <p className="text-xl text-gray-300">Full Stack Development</p>
+        </CardHeader>
+        <Divider />
+        <CardBody>
+          <p className="text-gray-300">
+            As a seasoned full-stack web developer proficient in the MERN stack,
+            I offer end-to-end solutions that seamlessly integrate front-end and
+            back-end technologies, ensuring comprehensive and dynamic web
+            experiences.
+          </p>
         </CardBody>
         <Divider />
       </Card>
