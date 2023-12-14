@@ -3,7 +3,6 @@
 import Profile from "@/components/Profile";
 import { Button } from "@nextui-org/react";
 import toast from "react-hot-toast";
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const ContactPage = () => {
   const handleSubmit = async (e) => {

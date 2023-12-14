@@ -23,7 +23,7 @@ const CustomNavbar = () => {
           href="/"
           className="text-gray-500 hover:text-blue-600 text-lg font-semibold"
         >
-          About Me
+          Main
         </Link>
       </NavbarItem>
       {/* <NavbarItem>
