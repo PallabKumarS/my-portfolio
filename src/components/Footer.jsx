@@ -17,7 +17,9 @@ const Footer = () => {
               My PortFolio
             </span>
             <br />
-            Created With NextJs and NextUi
+            Created With{" "}
+            <span className="text-violet-500 font-semibold">NextJs</span> and
+            <span className="text-violet-500 font-semibold"> NextUi</span>
           </p>
         </aside>
 

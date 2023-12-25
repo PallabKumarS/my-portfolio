@@ -22,12 +22,19 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 const SkillSet = () => {
   return (
-    <div className="flex flex-col gap-5 md:flex-row justify-center items-center pb-10">
+    <div className="flex flex-col gap-5 md:flex-row justify-center items-center pb-10 relative">
       {/* first card  */}
-      <div className="w-96">
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeIn" }}
+        className="w-96"
+      >
         <Card className="max-w-[400px] bg-gray-800 h-80">
           <CardHeader className="flex gap-3 justify-center">
             <Image alt="logo fe" src={frontEnd} width={40}></Image>
@@ -46,9 +53,15 @@ const SkillSet = () => {
           </CardBody>
           <Divider />
         </Card>
-      </div>
+      </motion.div>
       {/* second card  */}
-      <div className="w-96">
+      <motion.div
+        initial={{ opacity: 0, y: -200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+        className="w-96"
+      >
         <Card className="max-w-[400px] bg-gray-800 h-80">
           <CardHeader className="flex gap-3 justify-center">
             <Image alt="logo fe" src={backEnd} width={40}></Image>
@@ -65,9 +78,15 @@ const SkillSet = () => {
           </CardBody>
           <Divider />
         </Card>
-      </div>
+      </motion.div>
       {/* third card  */}
-      <div className="w-96">
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeIn" }}
+        className="w-96"
+      >
         <Card className="max-w-[400px] bg-gray-800 h-80">
           <CardHeader className="flex gap-3 justify-center">
             <FaTools className="text-4xl text-white" />
@@ -84,7 +103,7 @@ const SkillSet = () => {
           </CardBody>
           <Divider />
         </Card>
-      </div>
+      </motion.div>
     </div>
   );
 };

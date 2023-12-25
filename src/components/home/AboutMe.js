@@ -73,10 +73,8 @@ const AboutMe = () => {
           in the ever-evolving world of web development.
         </p>
         <div className="flex-1">
-          <p className="text-xl text-gray-300">
-            Name : Pallab Kumar Sarker
-            <hr className="border-2 border-slate-600 mt-1" />
-          </p>
+          <p className="text-xl text-gray-300">Name : Pallab Kumar Sarker</p>
+          <hr className="border-2 border-slate-600 mt-1" />
           <h3 className="text-2xl text-gray-300 mt-3 border-b-2 w-fit border-teal-700">
             Education
           </h3>

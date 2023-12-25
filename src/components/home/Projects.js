@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
 import Image from "next/image";
 import TQ1 from "../../../public/TQ1.png";
@@ -12,8 +13,6 @@ import SS1 from "../../../public/SS1.png";
 import SS2 from "../../../public/SS2.png";
 import SS3 from "../../../public/SS3.png";
 import CustomSlider from "../CustomSlider";
-import { PhotoProvider } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
 
 const Projects = () => {
   const projects = [
@@ -41,7 +40,7 @@ const Projects = () => {
     {
       name: "Hype Electronic",
       images: [HE1, HE2, HE3],
-      info: "Welcome to our cutting-edge MERN stack-powered platform dedicated to electronic component repairing. We bring together technology and expertise to breathe new life into your electronic devices. From intricate circuit boards to complex components, our platform offers a range of services designed to meet your electronic repair needs.",
+      info: "Explore our advanced MERN stack platform for electronic component repair. We blend technology and expertise to revive your devices. From intricate circuit boards to complex components, our platform offers a range of services designed to meet your electronic repair needs.",
       technology: [
         "Html",
         "Css",
@@ -81,11 +80,17 @@ const Projects = () => {
 
   return (
     <div>
-      <PhotoProvider>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 pb-20">
-          {projects.map((project, idx) => (
-            <div key={idx}>
-              <Card className="py-4 bg-base-200 min-h-[400px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 pb-20">
+        {projects.map((project, idx) => (
+          <motion.div
+            initial={{ opacity: 0, y: 300 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            key={idx}
+          >
+            <div>
+              <Card className="py-4 bg-base-200 min-h-[710px]">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                   <h4 className="font-bold text-3xl text-gray-400">
                     {project.name}
@@ -135,9 +140,9 @@ const Projects = () => {
                 </CardFooter>
               </Card>
             </div>
-          ))}
-        </div>
-      </PhotoProvider>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
