@@ -1,6 +1,6 @@
 "use client";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 const Footer = () => {
@@ -37,6 +37,9 @@ const Footer = () => {
               </a>
               <a href="https://twitter.com/PallabKumarS">
                 <BsTwitter className="text-4xl text-sky-500 hover:link-hover"></BsTwitter>
+              </a>
+              <a href="https://github.com/PallabKumarS">
+                <FaGithub className="text-4xl text-stone-800 hover:link-hover"></FaGithub>
               </a>
             </div>
           </nav>
